@@ -12,8 +12,8 @@ const navLinks = [
     link: "#skills",
   },
   {
-    name: "Testimonials",
-    link: "#testimonials",
+    name: "Education",
+    link: "#education",
   },
 ];
 
@@ -29,11 +29,13 @@ const words = [
 ];
 
 const counterItems = [
-  { value: 15, suffix: "+", label: "Years of Experience" },
-  { value: 200, suffix: "+", label: "Satisfied Clients" },
-  { value: 108, suffix: "+", label: "Completed Projects" },
-  { value: 90, suffix: "%", label: "Client Retention Rate" },
+  { value: 1, suffix: "+", label: "Year of Industry Experience" }, // MAS Legato
+  { value: 5, suffix: "+", label: "Technologies Mastered" },       // React, Python, PHP, etc.
+  { value: 6, suffix: "", label: "Major Projects Built" },         // Retail App, CRM, Blog
+  { value: 3, suffix: "", label: "Student Leadership Roles" },     // Rotaract + FCS
 ];
+
+
 
 const logoIconsList = [
   {
@@ -69,25 +71,28 @@ const logoIconsList = [
   {
     imgPath: "/images/logos/company-logo-11.png",
   },
+  
+  
 ];
 
 const abilities = [
   {
-    imgPath: "/images/seo.png",
-    title: "Quality Focus",
-    desc: "Delivering high-quality results while maintaining attention to every detail.",
+    imgPath: "/images/leadership.png",
+    title: "Leadership & Teamwork",
+    desc: "Guiding teams to success in projects like Syntex Outlet Store, fostering collaboration and clear communication.",
   },
   {
-    imgPath: "/images/chat.png",
-    title: "Reliable Communication",
-    desc: "Keeping you updated at every step to ensure transparency and clarity.",
+    imgPath: "/images/problem-solving.png",
+    title: "Problem Solving",
+    desc: "Tackling complex challenges with innovative solutions, as demonstrated in multi-user retail and CRM systems.",
   },
   {
-    imgPath: "/images/time.png",
-    title: "On-Time Delivery",
-    desc: "Making sure projects are completed on schedule, with quality & attention to detail.",
+    imgPath: "/images/technical.png",
+    title: "Technical Expertise",
+    desc: "Building robust applications using Java, React, and Laravel, with a focus on clean architecture and scalability.",
   },
 ];
+
 
 const techStackImgs = [
   {
@@ -147,39 +152,16 @@ const techStackIcons = [
 
 const expCards = [
   {
-    review: "Adrian brought creativity and technical expertise to the team, significantly improving our frontend performance. His work has been invaluable in delivering faster experiences.",
-    imgPath: "/images/exp1.png",
-    logoPath: "/images/logo1.png",
-    title: "Frontend Developer",
-    date: "January 2023 - Present",
+    review: "Designed and deployed RPA bots that streamlined operations, enabling teams to focus on higher-value tasks across departments.",
+    imgPath: "/images/MAS.png",
+    logoPath: "/images/exp-logo.jpeg",
+    title: "Junior Associate – Quality Assurance (RPA Developer)",
+    date: "June 2024 - June 2025",
     responsibilities: [
-      "Developed and maintained user-facing features for the Hostinger website.",
-      "Collaborated closely with UI/UX designers to ensure seamless user experiences.",
-      "Optimized web applications for maximum speed and scalability.",
-    ],
-  },
-  {
-    review: "Adrian’s contributions to Docker's web applications have been outstanding. He approaches challenges with a problem-solving mindset.",
-    imgPath: "/images/exp2.png",
-    logoPath: "/images/logo2.png",
-    title: "Full Stack Developer",
-    date: "June 2020 - December 2023",
-    responsibilities: [
-      "Led the development of Docker's web applications, focusing on scalability.",
-      "Worked with backend engineers to integrate APIs seamlessly with the frontend.",
-      "Contributed to open-source projects that were used with the Docker ecosystem.",
-    ],
-  },
-  {
-    review: "Adrian’s work on Appwrite’s mobile app brought a high level of quality and efficiency. He delivered solutions that enhanced our mobile experience & meet our product goals.",
-    imgPath: "/images/exp3.png",
-    logoPath: "/images/logo3.png",
-    title: "React Native Developer",
-    date: "March 2019 - May 2020",
-    responsibilities: [
-      "Built cross-platform mobile apps using React Native, integrating with Appwrite's backend services.",
-      "Improved app performance and user experience through code optimization and testing.",
-      "Coordinated with the product team to implement features based on feedback.",
+      "Designed and implemented automation workflows using UiPath, Microsoft Power Platform, and Python.",
+      "Built and deployed RPA bots to streamline operations and increase efficiency across various departments.",
+      "Collaborated closely on solution design, development, testing, and deployment phases.",
+      "Functioned primarily as a Software Engineer within the Process Automation team.",
     ],
   },
 ];
@@ -247,27 +229,119 @@ const testimonials = [
 const socialImgs = [
   {
     name: "insta",
+    url: "https://www.instagram.com/drawinakash/",
     imgPath: "/images/insta.png",
   },
   {
-    name: "fb",
-    imgPath: "/images/fb.png",
-  },
-  {
-    name: "x",
-    imgPath: "/images/x.png",
-  },
-  {
     name: "linkedin",
+    url: "https://www.linkedin.com/in/drawin-akash",
     imgPath: "/images/linkedin.png",
   },
 ];
 
+const eduCards = [
+  {
+    review: "Pursued a comprehensive Software Engineering degree, gaining expertise in modern development practices and technologies.",
+    imgPath: "/images/staffs-logo.png", // You'll need to add this image
+    logoPath: "/images/staffs-logo.png", // You'll need to add this image
+    institution: "Staffordshire University",
+    degree: "BEng (Hons) Software Engineering",
+    duration: "2022 – 2025",
+    achievements: [
+      "Currently pursuing Bachelor's degree in Software Engineering",
+      "Focus on modern software development methodologies and practices",
+      "Specialized coursework in web development, database systems, and software architecture",
+      "Practical experience with industry-standard development tools and frameworks"
+    ],
+  },
+  {
+    review: "Completed Advanced Level education with exceptional results, achieving top-tier performance in the national examinations.",
+    imgPath: "/images/st-benedicts-logo.png", // You'll need to add this image
+    logoPath: "/images/st-benedicts-logo.png", // You'll need to add this image
+    institution: "St. Benedict's College, Colombo",
+    degree: "Advanced Level Education",
+    duration: "2007 – 2021",
+    achievements: [
+      "A/L Results (2021) – 4 A passes with outstanding performance",
+      "Z-score: 1.9556 - demonstrating exceptional academic achievement",
+      "Island Rank: 694 - among top performers nationally",
+      "O/L Results (2018) – 4 A, 4 B, 1 C - strong foundation across subjects"
+    ],
+  },
+];
+
+
+const leadershipCards = [
+  {
+    title: "Deputy Head Prefect",
+    organization: "St. Benedict's College",
+    type: "Leadership",
+    duration: "2020",
+    iconPath: "/images/st-benedicts-logo.png", // You'll need to add this icon
+    review: "Led disciplinary initiatives and fostered positive school environment through strategic leadership and student engagement programs.",
+    description: "Served as Deputy Head Prefect of St. Benedict's College for the year 2020, overseeing disciplinary matters and fostering a positive school environment through various initiatives.",
+    highlights: [
+      "Managed school disciplinary committee",
+      "Implemented student welfare programs",
+      "Coordinated inter-house activities",
+      "Mentored junior students"
+    ],
+    impact: "Enhanced school culture and student engagement"
+  },
+  {
+    title: "Logistics Manager",
+    organization: "Full Stack Computer Society, APIIT",
+    type: "Leadership",
+    duration: "24/25",
+    iconPath: "/images/fcs-logo.png", // You'll need to add this icon
+    review: "Orchestrating seamless event coordination and logistics management for one of the premier tech societies in the university.",
+    description: "Currently managing logistics for the Full Stack Computer Society at APIIT, ensuring seamless coordination of events and activities.",
+    highlights: [
+      "Event planning and execution",
+      "Resource allocation and management",
+      "Vendor coordination",
+      "Timeline and budget management"
+    ],
+    impact: "100% successful event delivery rate"
+  },
+  {
+    title: "Director of Digital Services",
+    organization: "Rotaract Club of APIIT",
+    type: "Leadership",
+    duration: "24/25",
+    iconPath: "/images/RAC-APIIT.png", // You'll need to add this icon
+    review: "Driving digital transformation and community impact through innovative technology solutions and strategic online engagement.",
+    description: "Overseeing the club's digital presence and strategy, supporting community service projects through innovative tech solutions and online engagement.",
+    highlights: [
+      "Digital strategy development",
+      "Social media management",
+      "Tech solution implementation",
+      "Online community building"
+    ],
+    impact: "300% increase in digital engagement"
+  },
+  {
+    title: "Event Volunteer",
+    organization: "Fulbright Association - EducationUSA",
+    type: "Volunteer",
+    duration: "September 2023",
+    iconPath: "/images/Fulbright-logo-new.jpg", // You'll need to add this icon
+    review: "Contributed to international education initiatives by supporting prospective students in their academic journey abroad.",
+    description: "Participated in volunteer service at the EducationUSA fair held at BMICH, Sri Lanka, in September 2023. Assisted in various tasks to support the event's success.",
+    highlights: [
+      "Student guidance and support",
+      "Event logistics assistance",
+      "Information dissemination",
+      "Cross-cultural communication"
+    ],
+    impact: "Helped 500+ students with education guidance"
+  }
+];
+
 export {
-    abilities, counterItems,
-    expCards,
-    expLogos, logoIconsList, navLinks, socialImgs,
-    techStackIcons,
-    techStackImgs, testimonials, words
+  abilities, counterItems, eduCards, expCards,
+  expLogos, leadershipCards, logoIconsList, navLinks, socialImgs,
+  techStackIcons,
+  techStackImgs, testimonials, words
 };
 

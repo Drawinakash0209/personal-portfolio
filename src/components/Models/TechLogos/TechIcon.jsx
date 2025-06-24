@@ -35,7 +35,6 @@ const TechIcon = ({ model }) => {
   );
 };
 
-// Optional: Preload model
-useGLTF.preload('/path/to/your/model.glb');
+
 
 export default TechIcon;
